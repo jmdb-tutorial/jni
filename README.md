@@ -13,7 +13,7 @@ make run
 And you should see the following:
 
 ```
-Hey this is very simple. I am about to call a C function that says hello to me...
+Hey this is very simple. I am about to call a C function that says hello to Ada...
 
 
 In C, the received string is: Ada
@@ -23,7 +23,7 @@ Hello [Ada]
 See that was easy, wasn't it?
 ```
 
-## Regenerate the c header file
+## Regenerate the c header file
 
 To do this, run
 
@@ -34,7 +34,7 @@ make generate
 This will create the file `src/main/c/jmdb_tutorial_jni_CHelloWorld.h` - this file is alread checked in so you should only need
 to do this if you change the signature, you will also need to update the implementation `.c` file of course
 
-## Create the libs
+## Create the libs
 
 Run
 
