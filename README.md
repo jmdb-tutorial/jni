@@ -2,6 +2,10 @@
 
 Follow from https://www3.ntu.edu.sg/home/ehchua/programming/java/JavaNativeInterface.html
 
+Currently only set up to work on OSX.
+
+In theory you should just be able to run the main
+
 ## Regenerate the c header file
 
 To do this, run
@@ -15,3 +19,10 @@ to do this if you change the signature, you will also need to update the impleme
 
 ## Create the libs
 
+Run
+
+```
+make compile-osx
+```
+
+This should regenerate the .o and .dylib files
