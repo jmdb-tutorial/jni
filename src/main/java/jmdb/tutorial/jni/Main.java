@@ -1,7 +1,5 @@
 package jmdb.tutorial.jni;
 
-import sun.jvm.hotspot.HelloWorld;
-
 import static java.lang.System.out;
 
 public class Main {
@@ -14,6 +12,6 @@ public class Main {
         out.println(helloWorld.sayHello("Ada"));
 
         out.println("\n\nSee that was easy, wasn't it?");
-;
+        ;
     }
 }
