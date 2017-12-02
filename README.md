@@ -4,7 +4,24 @@ Follow from https://www3.ntu.edu.sg/home/ehchua/programming/java/JavaNativeInter
 
 Currently only set up to work on OSX.
 
-In theory you should just be able to run the main
+In theory, on OSX you should just be able to run the main class by typing to see the demo
+
+```
+make run
+```
+
+And you should see the following:
+
+```
+Hey this is very simple. I am about to call a C function that says hello to me...
+
+
+In C, the received string is: Ada
+Hello [Ada]
+
+
+See that was easy, wasn't it?
+```
 
 ## Regenerate the c header file
 

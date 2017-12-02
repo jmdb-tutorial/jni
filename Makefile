@@ -2,10 +2,16 @@ clean:
 	rm -rf lib
 	rm -rf target
 
-generate:
+compile-java:
 	mkdir -p target/classes
 	javac -d target/classes src/main/java/jmdb/tutorial/jni/CHelloWorld.java src/main/java/jmdb/tutorial/jni/Main.java
+
+generate: compile-java
 	javah -cp target/classes -d src/main/c jmdb.tutorial.jni.CHelloWorld
+
+run: compile-java
+	java -Djava.library.path=lib -cp target/classes jmdb.tutorial.jni.Main
+
 
 compile-osx:
 	mkdir -p lib
