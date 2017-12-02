@@ -6,7 +6,7 @@ out
 *.d
 
 # Object files
-*.o
+
 *.ko
 *.obj
 *.elf
@@ -21,7 +21,7 @@ out
 *.pch
 
 # Libraries
-*.lib
+
 *.a
 *.la
 *.lo
@@ -30,7 +30,7 @@ out
 *.dll
 *.so
 *.so.*
-*.dylib
+
 
 # Executables
 *.exe
