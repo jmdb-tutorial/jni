@@ -1,7 +1,13 @@
 package jmdb.tutorial.jni;
 
 public class CHelloWorld {
-    public String sayHello(String to) {
-        return "Hello [" + to + "]";
+
+    static {
+        System.loadLibrary("hello"); // Load native library at runtime
+        // hello.dll (Windows) or libhello.so (Unixes)
     }
+
+    public native String sayHello(String to);
+
+
 }
